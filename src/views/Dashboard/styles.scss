@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 * {
 	margin: 0;
 	padding: 0;
+  font-family: 'Montserrat';
 }
 .dashboard{
   background-color: #24262E;
   color: #7B8189;
-  width: 100vw;
   height: 100vh;
+
+  main{
+    display: flex;
+    height: 100%;
+  }
 }
