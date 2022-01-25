@@ -9,6 +9,15 @@ export function Sidebar() {
   return (
     <section className="content">
       <RoverCard />
+      <div>
+        audio
+      </div>
+      <div>
+        Rover Dropdown
+      </div>
+      <footer>
+        Credits
+      </footer>
     </section>
   )
 }

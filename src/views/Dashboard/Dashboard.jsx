@@ -1,12 +1,12 @@
 import React from 'react'
-import Draggable from 'react-draggable'
 import { 
   Topbar, 
-  Sidebar, 
-  CurrentLocation,
-  VideoFeed,
-  Gallery
+  Sidebar,
+  DraggableVideoFeed,
+  DraggableGallery,
 } from "../../components"
+
+import { SubHeader } from "../../components/Content";
 
 import "./styles.scss"
 
@@ -20,8 +20,15 @@ export function Dashboard() {
         <aside>
           <Sidebar />
         </aside>
-        <section>
-          contenido
+        <section className="rovers-content">
+          <SubHeader />
+          <div style={{width: "300px"}}>
+           <DraggableVideoFeed />
+          </div>
+
+          <div style={{width: "300px"}}>
+            <DraggableGallery />
+          </div>
         </section>
       </main>
     </div>

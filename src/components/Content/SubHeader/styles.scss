@@ -1,0 +1,26 @@
+@import "../../../theme/theme.scss";
+
+.subheader{
+  background-color: $cp-background;
+  padding: 5px;
+  width: 100%;
+  border-radius: 12px;
+  
+  
+  .rover{
+    color: $cp-title;
+    font-weight: $bold;
+    font-size: $font-title;
+    
+    .carrier{
+      margin-left: 20px;
+      font-size: $font-normal;
+    }
+  }
+  .manufacturer{
+
+  }
+  .launched{
+
+  }
+}
