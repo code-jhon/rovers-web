@@ -3,7 +3,7 @@ export const mockRover = {
   name: 'Perseverance',
   owner: {
     name: "NASA",
-    url: "https://en.wikipedia.org/wiki/NASA"
+    url: "https://en.wikipedia.org/wiki/NASA",
   },
   manufacturer: {
     name: "	Jet Propulsion Laboratory",
@@ -18,7 +18,8 @@ export const mockRover = {
     dryMass: "1,025 kilograms",
     rocket: {
       name: "Atlas V 541",
-      link: "https://en.wikipedia.org/wiki/Atlas_V"
+      link: "https://en.wikipedia.org/wiki/Atlas_V",
+      launched: "11:50:01 UTC on 30 July 2020"
     }
   },
   gallery: {

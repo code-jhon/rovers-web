@@ -1,52 +1,36 @@
 import React from 'react'
-import Draggable from 'react-draggable'
 import { 
   Topbar, 
-  Sidebar, 
-  CurrentLocation,
-  VideoFeed,
-  Gallery
+  Sidebar,
+  DraggableVideoFeed,
+  DraggableGallery,
 } from "../../components"
 
-import { Row } from "reactstrap"
+import { SubHeader } from "../../components/Content";
+
 import "./styles.scss"
 
 export function Dashboard() {
   return (
     <div className="bg-dark dashboard">
-      <div className="topbar">
+      <header>
         <Topbar />
-      </div>
-      <div className="components">
-        <div className="sidebar">
+      </header>
+      <main>
+        <aside>
           <Sidebar />
-        </div>
-        <div className="content">
-          <div className="secondaryheader">
-            <div>name</div>
-            <div>audio tag</div>
+        </aside>
+        <section className="rovers-content">
+          <SubHeader />
+          <div style={{width: "300px"}}>
+           <DraggableVideoFeed />
           </div>
-          <div className="currentLocation">
-            <CurrentLocation />          
+
+          <div style={{width: "300px"}}>
+            <DraggableGallery />
           </div>
-          <div className="draggableComponents">
-            <div className="component videofeed">
-              <Draggable>
-                <div className="box">
-                  <VideoFeed width="100%" height="auto" />
-                </div>
-              </Draggable>
-            </div>
-            <div className="component gallery">
-              <Draggable>
-                <div className="box">
-                  <Gallery width="100%" height="auto" />
-                </div>
-              </Draggable>
-            </div>
-          </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
   )
 }

@@ -1,0 +1,26 @@
+@import '../../../theme/theme.scss';
+.rovercard{
+  background-color: #2f323d;
+  position: relative;
+
+  .rover-image{
+    width: 100%;
+  }
+  .rover-name{
+    background-color: $tag-background;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  .rover-carrier{
+    background-color: $tag-background;
+    position: absolute;
+    bottom: 0;
+  }
+  .rover-sol{
+    background-color: $tag-background;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
