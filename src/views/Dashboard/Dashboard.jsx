@@ -2,6 +2,8 @@ import React from 'react'
 import { 
   Topbar, 
   Sidebar,
+  CurrentLocation,
+  DraggableLocation,
   DraggableVideoFeed,
   DraggableGallery,
 } from "../../components"
@@ -10,7 +12,9 @@ import { SubHeader } from "../../components/Content";
 
 import "./styles.scss"
 
+
 export function Dashboard() {
+
   return (
     <div className="bg-dark dashboard">
       <header>
@@ -22,11 +26,13 @@ export function Dashboard() {
         </aside>
         <section className="rovers-content">
           <SubHeader />
-          <div style={{width: "300px"}}>
-           <DraggableVideoFeed />
+          <div className="rovers-component w100">
+            <CurrentLocation />
           </div>
-
-          <div style={{width: "300px"}}>
+          <div className="w70">
+            <DraggableVideoFeed />
+          </div>
+          <div className="w30">
             <DraggableGallery />
           </div>
         </section>

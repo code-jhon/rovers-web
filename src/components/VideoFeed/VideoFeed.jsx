@@ -1,10 +1,19 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 
-export function VideoFeed({width, height}) {
+import "./styles.scss"
+
+export function VideoFeed() {
   return (
-    <div>
-      <ReactPlayer width={width} height={height} controls url="https://upload.wikimedia.org/wikipedia/commons/transcoded/0/0d/Perseverance_Rover%27s_Descent_and_Touchdown_on_Mars_Onboard_Camera_Views_.webm/Perseverance_Rover%27s_Descent_and_Touchdown_on_Mars_Onboard_Camera_Views_.webm.480p.vp9.webm" />
+    <div className='player-wrapper'>
+      <ReactPlayer 
+        className='react-player'
+        loop
+        controls 
+        url="https://www.youtube.com/watch?v=lKKsJaVD3qY" 
+        width="100%"
+        height="300px"
+      />
     </div>
   )
 }

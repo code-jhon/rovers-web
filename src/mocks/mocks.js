@@ -23,6 +23,11 @@ export const mockRover = {
     }
   },
   gallery: {
+    live: {
+      id: 1,
+      url: "https://www.youtube.com/watch?v=ppx07jyGNGY",
+      title: "Perseverance live stream from mars on Youtube"
+    },
     audio: [
       {
         id: 1, alt: "perseverance record", url: "https://upload.wikimedia.org/wikipedia/commons/d/da/Sounds_of_Perseverance_Mars_rover_driving.oga"
