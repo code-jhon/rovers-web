@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import "../../theme/theme.scss";
 * {
 	margin: 0;
 	padding: 0;
   font-family: 'Montserrat';
 }
 .dashboard{
-  background-color: #24262E;
-  color: #7B8189;
-  height: 100vh;
+  background-color: $dsb-background;
+  color: $font-color;
+  height: 100%;
 
   main{
     display: flex;
@@ -17,5 +18,25 @@
   section.rovers-content{
     padding: 30px;
     width: 100%;
+    height: 100%;
+
+    .w100{
+      width: 100%;
+    }
+
+    .w70{
+      width: 69%;
+    }
+
+    .w30{
+      width: 29%;
+    }
+
+    div.rovers-component{
+      margin-top: 20px;
+      background-color: $cp-background;
+      padding: 15px;
+      border-radius: 12px;
+    }
   }
 }

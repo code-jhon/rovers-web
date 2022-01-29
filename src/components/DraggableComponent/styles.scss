@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import "../../theme/theme.scss";
+
+div.component{
+    margin-top: 20px;
+    background-color: $cp-background;
+    padding: 15px;
+    border-radius: 12px;
+    cursor: grab;
+}
