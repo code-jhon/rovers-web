@@ -4,10 +4,27 @@ section.content{
   background-color: $ct-background;
   height: 100%;
   position: relative;
-  width: 17rem;
+  transition: 1s;
+  width: 1rem;
+
+  &:hover{
+    transition: 1s;
+    width: 17rem;
+  }
 
   footer{
     position: absolute;
     bottom:0;
+  }
+
+}
+@media (max-width: 5rem) {
+  section.content > *{
+    display:unset;
+  }
+}
+@media (min-width: 6rem) {
+  section.content > *{
+    display:inline;
   }
 }

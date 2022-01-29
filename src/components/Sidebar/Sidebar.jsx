@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { RoverCard } from './components'
 
 import "./styles.scss";
