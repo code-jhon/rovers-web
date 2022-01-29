@@ -5,7 +5,7 @@ import "./styles.scss"
 
 export function DraggableComponent({Component}) {
   return (
-    <Draggable>
+    <Draggable bounds="#draggableArea">
       <div className='component'>
         <Component />
       </div>

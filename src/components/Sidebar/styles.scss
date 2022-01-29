@@ -1,6 +1,8 @@
+@import "../../theme/theme.scss";
+
 section.content{
-  background-color: #2A2D36;
-  height: calc(100% - 64.86px);
+  background-color: $ct-background;
+  height: 100%;
   position: relative;
   width: 17rem;
 

@@ -29,11 +29,13 @@ export function Dashboard() {
           <div className="rovers-component w100">
             <CurrentLocation />
           </div>
-          <div className="w70">
-            <DraggableVideoFeed />
-          </div>
-          <div className="w30">
-            <DraggableGallery />
+          <div id="draggableArea">
+            <div className="w70">
+              <DraggableVideoFeed />
+            </div>
+            <div className="w30">
+              <DraggableGallery />
+            </div>
           </div>
         </section>
       </main>
