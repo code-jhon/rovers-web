@@ -4,10 +4,27 @@ section.content{
   background-color: $ct-background;
   height: 100%;
   position: relative;
-  width: 17rem;
+  transition: 1s;
+  width: 1rem;
+  
+  div {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
 
-  footer{
+  &:hover{
+    div {
+      visibility: visible;
+      opacity: 1;
+    }
+    transition: 1s;
+    width: 17rem;
+  }
+
+  footer{ 
     position: absolute;
     bottom:0;
   }
+
 }
