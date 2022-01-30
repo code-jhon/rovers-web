@@ -1,5 +1,5 @@
 import React from 'react'
-import { RoverCard } from './components'
+import { RoverCard, AudioPlayer } from './components'
 
 import "./styles.scss";
 
@@ -9,7 +9,7 @@ export function Sidebar() {
     <section className="content">
       <RoverCard />
       <div>
-        audio
+        <AudioPlayer />
       </div>
       <div>
         Rover Dropdown
