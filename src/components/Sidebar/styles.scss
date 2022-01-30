@@ -6,25 +6,25 @@ section.content{
   position: relative;
   transition: 1s;
   width: 1rem;
+  
+  div {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
 
   &:hover{
+    div {
+      visibility: visible;
+      opacity: 1;
+    }
     transition: 1s;
     width: 17rem;
   }
 
-  footer{
+  footer{ 
     position: absolute;
     bottom:0;
   }
 
-}
-@media (max-width: 5rem) {
-  section.content > *{
-    display:unset;
-  }
-}
-@media (min-width: 6rem) {
-  section.content > *{
-    display:inline;
-  }
 }
