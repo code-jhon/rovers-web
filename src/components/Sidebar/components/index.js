@@ -1,1 +1,1 @@
-export * from "./RoverCard"
+export { RoverCard } from "./RoverCard/"
