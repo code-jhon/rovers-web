@@ -3,6 +3,7 @@ import { Sidebar } from "./Sidebar"
 import { CurrentLocation } from "./CurrentLocation"
 import { VideoFeed } from "./VideoFeed"
 import { Gallery } from "./Gallery"
+import { Loader } from "./Loader"
 import { DraggableComponent } from "./DraggableComponent"
 
 export const DraggableVideoFeed = () => <DraggableComponent Component={VideoFeed} />
@@ -14,5 +15,6 @@ export {
   Sidebar,
   CurrentLocation,
   VideoFeed,
-  Gallery
+  Gallery,
+  Loader
 }
