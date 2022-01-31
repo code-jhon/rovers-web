@@ -1,0 +1,12 @@
+@import "../../../../theme/theme.scss";
+input { 
+  border: none;
+  outline: none;
+}
+
+.searchInp{
+  color: $font-color;
+  background-color: $dsb-background;
+  border: solid 1px $cp-background;
+  width: 100%;
+}
