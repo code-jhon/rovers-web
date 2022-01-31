@@ -1,12 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Dashboard } from "./views/Dashboard";
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Dashboard } from "./views/Dashboard"
+import reportWebVitals from './reportWebVitals'
+import { RoversProvider } from './providers/RoversProvider'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dashboard />
+    <RoversProvider>
+      <Dashboard />
+    </RoversProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

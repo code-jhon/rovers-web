@@ -1,20 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { 
   Topbar, 
   Sidebar,
   CurrentLocation,
-  DraggableLocation,
   DraggableVideoFeed,
   DraggableGallery,
 } from "../../components"
 
-import { SubHeader } from "../../components/Content";
+import { SubHeader } from "../../components/Content"
 
 import "./styles.scss"
-
+import { mockRover } from '../../mocks/mocks'
 
 export function Dashboard() {
-
+  //console.log(JSON.stringify(mockRover))
   return (
     <div className="bg-dark dashboard">
       <header>
@@ -35,6 +34,8 @@ export function Dashboard() {
             </div>
             <div className="w30">
               <DraggableGallery />
+            </div>
+            <div className='w30'>
             </div>
           </div>
         </section>
