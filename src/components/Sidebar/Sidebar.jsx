@@ -1,5 +1,9 @@
 import React from 'react'
-import { RoverCard, AudioPlayer } from './components'
+import { 
+  RoverCard, 
+  AudioPlayer,
+  Specifications
+} from './components'
 
 import "./styles.scss";
 
@@ -12,7 +16,7 @@ export function Sidebar() {
         <AudioPlayer />
       </div>
       <div>
-        Rover Dropdown
+        <Specifications />
       </div>
       <footer>
         Credits

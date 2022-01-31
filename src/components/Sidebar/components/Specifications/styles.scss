@@ -1,0 +1,23 @@
+@import "../../../../theme/theme.scss";
+
+.specs-content{
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 30px;
+
+    .tag{
+        color: $cp-title;
+        font-size: $font-big;
+        font-weight: $bold;
+    }
+
+    .specs-group{
+        display: flex;
+        flex-direction: row;
+
+        .specs-attr{
+            font-weight: $bold;
+        }
+    }
+}
