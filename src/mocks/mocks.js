@@ -1,6 +1,12 @@
 export const mockRover = {
   id: 1,
   name: 'Perseverance',
+  targets: [
+    {id: 1, target: "Búsqueda de habitabilidad", desc: "identificar ambientes que pudieron ser capaces de albergar vida microbiana."},
+    {id: 2, target: "Búsqueda de biofirmas", desc: "buscar signos de posible vida microbiana en esos ambientes habitables, particularmente en rocas especiales que se conoce que preservan estos signos en el tiempo."},
+    {id: 3, target: "Almacenamiento de muestras", desc: "recoger muestras de tierra y roca, y almacenarlas en la superficie."},
+    {id: 4, target: "Allanar el camino a los humanos", desc: "probar la generación de oxígeno en la superficie marciana a partir del CO2 atmosférico."}
+  ],
   owner: {
     name: "NASA",
     url: "https://en.wikipedia.org/wiki/NASA",
@@ -20,6 +26,19 @@ export const mockRover = {
       name: "Atlas V 541",
       link: "https://en.wikipedia.org/wiki/Atlas_V",
       launched: "11:50:01 UTC on 30 July 2020"
+    },
+    flightHistory: {
+      launched: {
+        date: "30th July 2020, 11:50 UTC",
+        place: "Cape Canaveral, FL",
+        url: "https://es.wikipedia.org/wiki/Estaci%C3%B3n_de_la_Fuerza_Espacial_de_Cabo_Ca%C3%B1averal"
+      },
+      landing: 
+      {
+        date: "18th February de 2021, 20:56 UTC",
+        place: "Cráter Jezero",
+        url: "http://tools.wmflabs.org/geohack/geohack.php?language=es&pagename=Perseverance_(rover)&params=18.4447_N_77.4508_E_globe:Mars"
+      }
     }
   },
   gallery: {
@@ -39,14 +58,23 @@ export const mockRover = {
       },
       {
         id: 2, alt: "Mapping Perseverance's First Six Samples", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/26464_samples_map_cores_web.jpg/1024px-26464_samples_map_cores_web.jpg"
+      },
+      {
+        id: 3, alt: "Mapping Perseverance's First Six Samples", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/26464_samples_map_cores_web.jpg/1024px-26464_samples_map_cores_web.jpg"
+      },
+      {
+        id: 4, alt: "Mapping Perseverance's First Six Samples", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/26464_samples_map_cores_web.jpg/1024px-26464_samples_map_cores_web.jpg"
       }
     ],
     videos: [
       {
-        id: 1, alt:"Animation displaying the scientific instruments", url: "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/ce/PIA24426-MarsPerseveranceRover-20210216.webm/PIA24426-MarsPerseveranceRover-20210216.webm.360p.vp9.webm"
+        id: 1, alt:"Animation landing", url: "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d1/NASA%27s_Mars_2020_Perseverance_Rover_Landing_Animations-rzmd7RouGrM.webm/NASA%27s_Mars_2020_Perseverance_Rover_Landing_Animations-rzmd7RouGrM.webm.480p.vp9.webm"
       },
       {
-        id: 2, alt:"Watson camera views rocks", url: "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/09/PIA24641-MarsPerseveranceRover-WatsonCameraViewsRocks-20210510.webm/PIA24641-MarsPerseveranceRover-WatsonCameraViewsRocks-20210510.webm.480p.vp9.webm"
+        id: 2, alt:"Animation displaying the scientific instruments", url: "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/ce/PIA24426-MarsPerseveranceRover-20210216.webm/PIA24426-MarsPerseveranceRover-20210216.webm.360p.vp9.webm"
+      },
+      {
+        id: 3, alt:"Watson camera views rocks", url: "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/09/PIA24641-MarsPerseveranceRover-WatsonCameraViewsRocks-20210510.webm/PIA24641-MarsPerseveranceRover-WatsonCameraViewsRocks-20210510.webm.480p.vp9.webm"
       }
     ]
   },
