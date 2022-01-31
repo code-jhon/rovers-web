@@ -3,10 +3,9 @@ import {
   UncontrolledCarousel
 } from "reactstrap"
 
-export function Gallery({width, height}) {
+export function Gallery() {
   return (
     <UncontrolledCarousel
-      style={{width, height}}
       items={[
         {
           altText: 'Slide 1',

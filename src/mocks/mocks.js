@@ -1,4 +1,4 @@
-export const mockRover = {
+export const mockRover = [{
   id: 1,
   name: 'Perseverance',
   targets: [
@@ -89,4 +89,4 @@ export const mockRover = {
     {sol: 312, date: "Jan. 4, 2022", airTemperature: {max: "-6 °C", min: "-82 °C"}, pressure: "625.9 Pa", sunrise: "05:10:49", sunset: "17:41:24"},
     {sol: 311, date: "Jan. 3, 2022", airTemperature: {max: "-10 °C", min: "-82 °C"}, pressure: "625.1 Pa", sunrise: "05:10:42", sunset: "17:41:51"},
   ]
-}
+}]
