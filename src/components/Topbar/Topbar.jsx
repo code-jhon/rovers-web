@@ -15,7 +15,7 @@ export function Topbar({rovers}) {
           </span>
         </div>
         <div className="search">
-          <Search />
+          <Search rovers={rovers}/>
         </div>
         <div className="user">
           User

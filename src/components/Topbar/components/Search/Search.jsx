@@ -1,18 +1,10 @@
 import { useState } from 'react';
+import { AutoComplete } from "../AutoComplete"
 import "./styles.scss"
-
-function AutoComplete ({rovers, search}) {
-  return (
-    <div className='autoComplete'>
-      autocomplete
-    </div>
-  )
-}
 
 export function Search({rovers}) {
   const [visible, setVisible] = useState(false)
   const [search, setSearch] = useState('')
-
 
   return (
     <div>
