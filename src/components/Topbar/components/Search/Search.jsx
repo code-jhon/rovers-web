@@ -6,6 +6,10 @@ export function Search({rovers}) {
   const [visible, setVisible] = useState(false)
   const [search, setSearch] = useState('')
 
+  const handleKeyDown = e => {
+    e.keyCode === 27 && setVisible(false)
+  }
+
   return (
     <div>
       <input 
@@ -16,6 +20,7 @@ export function Search({rovers}) {
         placeHolder="Search"
         onClick={e => setVisible(!visible)}
         onChange={e => setSearch(e.target.value)}
+        onKeyDown={handleKeyDown}
       />
       { visible && <AutoComplete rovers={rovers} search={search} /> }
     </div>
