@@ -1,0 +1,21 @@
+@import '../../../../theme/theme.scss';
+
+.autoComplete {
+  border: solid 1px $ct-background;
+}
+
+.landscape{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item{
+  &:hover{
+    background-color: $item-background;
+    cursor: pointer;
+  }
+}

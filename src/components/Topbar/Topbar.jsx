@@ -1,10 +1,11 @@
 import React from 'react'
 
-import Mars from './mars.png'
+import { Search } from './components';
 
+import Mars from '../../assets/mars.png'
 import "./styles.scss";
 
-export function Topbar() {
+export function Topbar({rovers}) {
   return (
       <nav className="topbar">
         <div className="brand">
@@ -14,7 +15,7 @@ export function Topbar() {
           </span>
         </div>
         <div className="search">
-          Search
+          <Search rovers={rovers}/>
         </div>
         <div className="user">
           User
