@@ -5,8 +5,9 @@ export const RoversContext = createContext()
 
 export const RoversProvider = props => {
   const [rovers, fetched] = useRovers()
+  const [currentRover, setCurrentRover] = useState({})
   return (
-    <RoversContext.Provider value={{rovers, fetched}} >
+    <RoversContext.Provider value={{rovers, fetched, currentRover, setCurrentRover}} >
       {props.children}
     </RoversContext.Provider>
   )

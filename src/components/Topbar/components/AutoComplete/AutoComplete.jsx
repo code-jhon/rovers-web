@@ -1,18 +1,19 @@
-import { useState } from 'react';
+import { useState } from 'react'
+import { RoverItem } from './RoverItem'
 import "./styles.scss"
 
 export function AutoComplete({rovers = [], search = ""}) {
-  const RoverItem = () => (
-    <div className='w100'>
-      <div>photo</div>
-      <div>name</div>
-      <div>carrier</div>
-    </div>
-  )
 
-  const roversList = rovers.length > 0 ? rovers.map(rover => (
+  const filterRovers = (rovers, search) => {
+
+    return rovers
+  }
+
+  const filteredRovers = search === "" ? rovers : filterRovers(rovers, search)
+
+  const RoversList = () => filteredRovers.length > 0 ? filteredRovers.map(rover => (
     <div>
-      <RoverItem rover={rover} />
+      <RoverItem {...rover} />
     </div>
   ))
   : (
@@ -21,7 +22,7 @@ export function AutoComplete({rovers = [], search = ""}) {
 
   return (
     <div className='autoComplete'>
-      { roversList }
+      <RoversList />
     </div>
   )
 }
