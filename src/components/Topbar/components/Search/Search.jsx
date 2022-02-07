@@ -17,7 +17,7 @@ export function Search({rovers}) {
         name="search" 
         className='searchInp' 
         autoComplete="off"
-        placeHolder="Search"
+        placeholder="Search"
         onClick={e => setVisible(!visible)}
         onChange={e => setSearch(e.target.value)}
         onKeyDown={handleKeyDown}

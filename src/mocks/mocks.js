@@ -1,6 +1,7 @@
 export const mockRover = [{
   id: 1,
   name: 'Perseverance',
+  sol: 342,
   targets: [
     {id: 1, target: "Búsqueda de habitabilidad", desc: "identificar ambientes que pudieron ser capaces de albergar vida microbiana."},
     {id: 2, target: "Búsqueda de biofirmas", desc: "buscar signos de posible vida microbiana en esos ambientes habitables, particularmente en rocas especiales que se conoce que preservan estos signos en el tiempo."},

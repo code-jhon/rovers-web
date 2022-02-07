@@ -8,19 +8,25 @@ import {
 import "./styles.scss";
 
 
-export function Sidebar() {
-  return (
+export function Sidebar({data}) {
+  console.log(data, "data")
+
+  const audio = data?.gallery?.audio
+
+  const content = data?.name && (
     <section className="content">
-      <RoverCard />
+      <RoverCard {...data} />
       <div>
-        <AudioPlayer />
+        <AudioPlayer audio={audio} />
       </div>
       <div>
-        <Specifications />
+        <Specifications {...data.specifications}/>
       </div>
       <footer>
         Credits
       </footer>
     </section>
   )
+
+  return content
 }

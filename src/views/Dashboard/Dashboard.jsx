@@ -12,16 +12,16 @@ import {
 import { SubHeader } from "../../components/Content"
 
 import "./styles.scss"
-//import { mockRover } from '../../mocks/mocks'
+import { mockRover } from '../../mocks/mocks'
 
 export function Dashboard() {
-  //console.log(JSON.stringify(mockRover))
-  const { rovers, fetched } = useContext(RoversContext)
+  console.log(JSON.stringify(mockRover))
+  const { rovers, fetched, currentRover } = useContext(RoversContext)
 
-  const main = (
+  const main = currentRover && (
     <main>
       <aside>
-        <Sidebar />
+        <Sidebar data={currentRover}/>
       </aside>
       <section className="rovers-content">
         <SubHeader />
