@@ -28,7 +28,7 @@ export function Dashboard() {
     <section className="rovers-content">
       <SubHeader {...currentRover}/>
       <div className="rovers-component w100">
-        <CurrentLocation />
+        <CurrentLocation location={currentRover.location}/>
       </div>
       <div id="draggableArea">
         <div className="w70">
