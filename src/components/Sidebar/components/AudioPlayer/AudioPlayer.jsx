@@ -4,7 +4,6 @@ import ReactPlayer from 'react-player'
 import "./styles.scss"
 
 export function AudioPlayer({audio}) {
-  console.log(audio, "Audio");
   return audio.length > 0 && (
     <div className='audioplayer'>
       <ReactPlayer 

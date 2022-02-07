@@ -5,6 +5,8 @@ $dsb-background: #24262E;
 $font-color: #7B8189;
 $cp-background: #2f323d;
 $cp-title: #F47C6D;
+$dsb-a-hover: #F47C6D;
+$dsb-a: #f0a095;
 $item-background: #2A2D36;
 
 // tags
@@ -21,6 +23,14 @@ $font-normal: 12px;
 $font-medium: 16px;
 $font-big: 20px;
 $font-title: 40px;
+
+a{
+  color: $dsb-a;
+
+  &:hover {
+    color: $dsb-a-hover;
+  }
+}
 
 .w100{
   width: 100%;

@@ -3,7 +3,7 @@ import { RoversContext } from '../../../../providers/RoversProvider'
 import { RoverItem } from './RoverItem'
 import "./styles.scss"
 
-export function AutoComplete({rovers = [], search = ""}) {
+export function AutoComplete({rovers = [], search = "", setVisible}) {
   const { setCurrentRover } = useContext(RoversContext)
 
   const filterRovers = (rovers, search) => rovers.filter(rover => rover.name.includes(search))
@@ -20,7 +20,7 @@ export function AutoComplete({rovers = [], search = ""}) {
   )
 
   return (
-    <div className='autoComplete'>
+    <div className='autoComplete' onClick={e => setVisible(false)}>
       <RoversList />
     </div>
   )
