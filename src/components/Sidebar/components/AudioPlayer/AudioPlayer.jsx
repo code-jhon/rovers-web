@@ -3,14 +3,15 @@ import ReactPlayer from 'react-player'
 
 import "./styles.scss"
 
-export function AudioPlayer() {
-  return (
+export function AudioPlayer({audio}) {
+  console.log(audio, "Audio");
+  return audio.length > 0 && (
     <div className='audioplayer'>
       <ReactPlayer 
         className='react-player'
         loop
         controls 
-        url="https://upload.wikimedia.org/wikipedia/commons/d/da/Sounds_of_Perseverance_Mars_rover_driving.oga" 
+        url={audio[0].url} 
         width="100%"
         height="27px"
       />
