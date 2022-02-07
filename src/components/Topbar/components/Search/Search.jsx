@@ -22,7 +22,7 @@ export function Search({rovers}) {
         onChange={e => setSearch(e.target.value)}
         onKeyDown={handleKeyDown}
       />
-      { visible && <AutoComplete rovers={rovers} search={search} /> }
+      { visible && <AutoComplete rovers={rovers} search={search} setVisible={setVisible} /> }
     </div>
   );
 }

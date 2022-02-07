@@ -20,7 +20,7 @@ export function Sidebar({data}) {
         <AudioPlayer audio={audio} />
       </div>
       <div>
-        <Specifications {...data.specifications}/>
+        <Specifications {...data.specifications} />
       </div>
       <footer>
         Credits
@@ -28,5 +28,5 @@ export function Sidebar({data}) {
     </section>
   )
 
-  return content
+  return <>{content}</>
 }
