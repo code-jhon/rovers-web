@@ -19,7 +19,7 @@ export const mockRover = [
     },
     images: [
       {type: "small", url:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Perseverance_Landing_Skycrane.jpg/320px-Perseverance_Landing_Skycrane.jpg"},
-      {type: "big", url: "https://hipertextual.com/wp-content/uploads/2020/07/hipertextual-curiosidades-sobre-perseverance-rover-mision-mars-2020-2020012223.png"}
+      {type: "big", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Perseverance-Selfie-at-Rochette-Horizontal-V2.gif/260px-Perseverance-Selfie-at-Rochette-Horizontal-V2.gif"}
     ],
     specifications: {
       dimensions: "2.9 m × 2.7 m × 2.2 m",
@@ -62,10 +62,10 @@ export const mockRover = [
           id: 2, alt: "Mapping Perseverance's First Six Samples", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/26464_samples_map_cores_web.jpg/1024px-26464_samples_map_cores_web.jpg"
         },
         {
-          id: 3, alt: "Mapping Perseverance's First Six Samples", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/26464_samples_map_cores_web.jpg/1024px-26464_samples_map_cores_web.jpg"
+          id: 3, alt: "Perseverance Landing site", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/PIA24377-MarsProbes-LandingEllipses-20210127.jpg/1280px-PIA24377-MarsProbes-LandingEllipses-20210127.jpg"
         },
         {
-          id: 4, alt: "Mapping Perseverance's First Six Samples", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/26464_samples_map_cores_web.jpg/1024px-26464_samples_map_cores_web.jpg"
+          id: 4, alt: "First Video tracks", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Perseverance_first_drive_on_Mars_2021-03-04.png/1280px-Perseverance_first_drive_on_Mars_2021-03-04.png"
         }
       ],
       videos: [
@@ -84,13 +84,16 @@ export const mockRover = [
       current: "https://mars.nasa.gov/maps/location/?mission=M20&site=NOW",
       path: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Locations_and_future_destinations_of_Perseverance_in_Jezero.jpg/1280px-Locations_and_future_destinations_of_Perseverance_in_Jezero.jpg"
     },
-    weather: [
-      {sol: 315, date: "Jan. 7, 2022", airTemperature: {max: "-6 °C", min: "-77 °C"}, pressure: "621.2 Pa", sunrise: "05:11:13", sunset: "17:40:04"},
-      {sol: 314, date: "Jan. 6, 2022", airTemperature: {max: "-6 °C", min: "-81 °C"}, pressure: "626.0 Pa", sunrise: "05:11:05", sunset: "17:40:31"},
-      {sol: 313, date: "Jan. 5, 2022", airTemperature: {max: "-6 °C", min: "-78 °C"}, pressure: "624.5 Pa", sunrise: "05:10:57", sunset: "17:40:57"},
-      {sol: 312, date: "Jan. 4, 2022", airTemperature: {max: "-6 °C", min: "-82 °C"}, pressure: "625.9 Pa", sunrise: "05:10:49", sunset: "17:41:24"},
-      {sol: 311, date: "Jan. 3, 2022", airTemperature: {max: "-10 °C", min: "-82 °C"}, pressure: "625.1 Pa", sunrise: "05:10:42", sunset: "17:41:51"},
-    ]
+    weather: {
+      embed: "https://mars.nasa.gov/layout/embed/image/m20weather/",
+      data: [
+        {sol: 315, date: "Jan. 7, 2022", airTemperature: {max: "-6 °C", min: "-77 °C"}, pressure: "621.2 Pa", sunrise: "05:11:13", sunset: "17:40:04"},
+        {sol: 314, date: "Jan. 6, 2022", airTemperature: {max: "-6 °C", min: "-81 °C"}, pressure: "626.0 Pa", sunrise: "05:11:05", sunset: "17:40:31"},
+        {sol: 313, date: "Jan. 5, 2022", airTemperature: {max: "-6 °C", min: "-78 °C"}, pressure: "624.5 Pa", sunrise: "05:10:57", sunset: "17:40:57"},
+        {sol: 312, date: "Jan. 4, 2022", airTemperature: {max: "-6 °C", min: "-82 °C"}, pressure: "625.9 Pa", sunrise: "05:10:49", sunset: "17:41:24"},
+        {sol: 311, date: "Jan. 3, 2022", airTemperature: {max: "-10 °C", min: "-82 °C"}, pressure: "625.1 Pa", sunrise: "05:10:42", sunset: "17:41:51"},
+      ]
+    }
   },
   {
     id: 2,
@@ -172,9 +175,12 @@ export const mockRover = [
       ]
     },
     location: {
-      path: "https://mars.nasa.gov/mer/mission/tm-spirit/images/MERA_Sol2555_1_br2.jpg"
+      path: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Main_Apollo_Hills.jpg/2560px-Main_Apollo_Hills.jpg"
     },
-    weather: []
+    weather: {
+      embed: "https://mars.nasa.gov/layout/embed/image/insightweather/",
+      data: []
+    }
   },
   {
     id: 3,
@@ -249,20 +255,29 @@ export const mockRover = [
         {
           id: 1, alt:"The descent of curiosity", url: "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/07/The_Descent_of_the_Curiosity_Rover_HD.ogv/The_Descent_of_the_Curiosity_Rover_HD.ogv.480p.vp9.webm"
         },
+        {
+          id: 2, alt:"Curiosity Mars Rover Snaps 1.8 Billion-Pixel Panorama (narrated video)", url: "https://www.youtube.com/watch?v=X2UaFuJsqxk"
+        },
+        {
+          id: 3, alt:"Curiosity opens a new era in Mars exploration", url: "https://www.youtube.com/watch?v=IaI9UeF0eOk"
+        }
       ]
     },
     location: {
       current: "https://mars.nasa.gov/maps/location/?mission=MSL&site=NOW",
       path: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Mars_Map.JPG/620px-Mars_Map.JPG"
     },
-    weather: [
-      {sol: 3375, date: "Feb. 2, 2022", airTemperature: {max: "0 °C", min: "-72 °C"}, pressure: "713 Pa", sunrise: "05:23:00", sunset: "17:20:04"},
-      {sol: 3374, date: "Feb. 1, 2022", airTemperature: {max: "0 °C", min: "-71 °C"}, pressure: "710 Pa", sunrise: "05:24:00", sunset: "17:20:31"},
-      {sol: 3373, date: "Jan. 31, 2022", airTemperature: {max: "-2 °C", min: "-71 °C"}, pressure: "710 Pa", sunrise: "05:24:00", sunset: "17:20:57"},
-      {sol: 3372, date: "Jan. 30, 2022", airTemperature: {max: "-2 °C", min: "-72 °C"}, pressure: "710 Pa", sunrise: "05:24:00", sunset: "17:20:24"},
-      {sol: 3371, date: "Jan. 29, 2022", airTemperature: {max: "-8 °C", min: "-72 °C"}, pressure: "711 Pa", sunrise: "05:24:00", sunset: "17:20:51"},
-      {sol: 3370, date: "Jan. 28, 2022", airTemperature: {max: "-5 °C", min: "-71 °C"}, pressure: "710 Pa", sunrise: "05:24:00", sunset: "17:20:24"},
-      {sol: 3369, date: "Jan. 27, 2022", airTemperature: {max: "-6 °C", min: "-72 °C"}, pressure: "710 Pa", sunrise: "05:25:00", sunset: "17:20:51"},
-    ]
+    weather: {
+      embed: "https://mars.nasa.gov/layout/embed/image/mslweather/",
+      data: [
+        {sol: 3375, date: "Feb. 2, 2022", airTemperature: {max: "0 °C", min: "-72 °C"}, pressure: "713 Pa", sunrise: "05:23:00", sunset: "17:20:04"},
+        {sol: 3374, date: "Feb. 1, 2022", airTemperature: {max: "0 °C", min: "-71 °C"}, pressure: "710 Pa", sunrise: "05:24:00", sunset: "17:20:31"},
+        {sol: 3373, date: "Jan. 31, 2022", airTemperature: {max: "-2 °C", min: "-71 °C"}, pressure: "710 Pa", sunrise: "05:24:00", sunset: "17:20:57"},
+        {sol: 3372, date: "Jan. 30, 2022", airTemperature: {max: "-2 °C", min: "-72 °C"}, pressure: "710 Pa", sunrise: "05:24:00", sunset: "17:20:24"},
+        {sol: 3371, date: "Jan. 29, 2022", airTemperature: {max: "-8 °C", min: "-72 °C"}, pressure: "711 Pa", sunrise: "05:24:00", sunset: "17:20:51"},
+        {sol: 3370, date: "Jan. 28, 2022", airTemperature: {max: "-5 °C", min: "-71 °C"}, pressure: "710 Pa", sunrise: "05:24:00", sunset: "17:20:24"},
+        {sol: 3369, date: "Jan. 27, 2022", airTemperature: {max: "-6 °C", min: "-72 °C"}, pressure: "710 Pa", sunrise: "05:25:00", sunset: "17:20:51"},
+      ]
+    }
   },
 ]

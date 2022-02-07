@@ -3,11 +3,11 @@ import Draggable from 'react-draggable'
 
 import "./styles.scss"
 
-export function DraggableComponent({Component}) {
+export function DraggableComponent({Component, data}) {
   return (
     <Draggable bounds="#draggableArea">
       <div className='component'>
-        <Component />
+        <Component {...data} />
       </div>
     </Draggable>
   )

@@ -1,31 +1,28 @@
-import React from 'react'
+import { useContext } from 'react'
+import { RoversContext } from '../../providers/RoversProvider';
 import { 
   UncontrolledCarousel
 } from "reactstrap"
 
+
 export function Gallery() {
+  const { currentRover } = useContext(RoversContext);
+  const { name, gallery } = currentRover
+
+  const items = gallery?.images.map(image => (
+    {
+      altText: "",
+      caption: "",
+      key: image.id,
+      src: image.url
+    }
+  ))
   return (
-    <UncontrolledCarousel
-      items={[
-        {
-          altText: 'Slide 1',
-          caption: '',
-          key: 1,
-          src: 'https://picsum.photos/id/123/1200/600'
-        },
-        {
-          altText: 'Slide 2',
-          caption: '',
-          key: 2,
-          src: 'https://picsum.photos/id/456/1200/600'
-        },
-        {
-          altText: 'Slide 3',
-          caption: '',
-          key: 3,
-          src: 'https://picsum.photos/id/678/1200/600'
-        }
-      ]}
-    />
+    <>
+      <div>{name}'s Gallery</div>
+      <UncontrolledCarousel
+        items={items}
+      />
+    </>
   )
 }

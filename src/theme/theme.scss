@@ -24,6 +24,12 @@ $font-medium: 16px;
 $font-big: 20px;
 $font-title: 40px;
 
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 a{
   color: $dsb-a;
 
