@@ -7,13 +7,16 @@ import {
   CurrentLocation,
   DraggableVideoFeed,
   DraggableGallery,
+  DraggableWeather,
   Loader,
 } from "../../components"
 import { SubHeader } from "../../components/Content"
 
 import "./styles.scss"
+import { mockRover } from '../../mocks/mocks'
 
 export function Dashboard() {
+  console.log(JSON.stringify(mockRover))
   const { rovers, fetched, currentRover } = useContext(RoversContext)
 
   const welcome = (
@@ -24,18 +27,25 @@ export function Dashboard() {
     </section>
   )
 
+  const videoList = currentRover?.gallery?.videos.map(video => (
+    <div className="w100" key={video.id}>
+      <DraggableVideoFeed {...video}/>
+    </div>
+  ))
+
   const roversContent = (
     <section className="rovers-content">
       <SubHeader {...currentRover}/>
       <div className="rovers-component w100">
-        <CurrentLocation />
+        <CurrentLocation location={currentRover.location}/>
       </div>
       <div id="draggableArea">
-        <div className="w70">
-          <DraggableVideoFeed />
-        </div>
-        <div className="w30">
+        <div className="w40">
           <DraggableGallery />
+          {videoList}
+        </div>
+        <div className="w60">
+          <DraggableWeather />
         </div>
         <div className='w30'>
         </div>
