@@ -11,7 +11,7 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 
-export function SectionChart({weather, name}) {
+export function SectionPressure({weather, name}) {
 
   ChartJS.register(
     CategoryScale,
@@ -31,40 +31,26 @@ export function SectionChart({weather, name}) {
       },
       title: {
         display: true,
-        text: `Air Temperature - ${name}`,
+        text: `Pressure - ${name}`,
       },
-    },
-    scales: {
-      yAxes: [{
-      ticks: { min: -100, max: 100 },
-      }], 
     },
   };
 
   const labels = weather?.data?.map(data => data.sol);
-  const airTempMax = weather?.data?.map(data => data.airTemperature.max);
-  const airTempMin = weather?.data?.map(data => data.airTemperature.min);
+  const pressure = weather?.data?.map(data => data.pressure);
 
   const data = {
     labels,
     datasets: [
       {
-        label: 'Air Temp Max',
-        data: airTempMax,
+        label: 'Pressure (Pa)',
+        data: pressure,
         borderColor: 'rgb(255, 99, 132)',
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
-      {
-        label: 'Air Temp Min',
-        data: airTempMin,
-        borderColor: 'rgb(53, 162, 235)',
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
-      },
     ],
   };
-
-
-  return weather?.data.length > 0 && (
+  return (
     <>
       <Line options={options} data={data} />
     </>

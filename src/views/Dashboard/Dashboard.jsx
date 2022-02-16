@@ -43,7 +43,9 @@ export function Dashboard() {
       </div>
       <div id="draggableArea">
         <div className="w100">
-          <DraggableWeatherChart />
+          {
+            currentRover?.weather?.data.length > 0 && <DraggableWeatherChart />
+          }
         </div>
         <div className="w40">
           {videoList}

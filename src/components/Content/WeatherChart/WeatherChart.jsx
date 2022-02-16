@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { RoversContext } from '../../../providers/RoversProvider';
 import { SectionChart } from "./SectionChart" 
 import { SectionDate } from './SectionDate';
+import { SectionPressure } from './SectionPressure';
 
 import "./styles.scss"
 
@@ -18,7 +19,9 @@ export const WeatherChart = () => {
         <div className='w30'>
           <SectionChart weather={weather} name={name} />
         </div>
-        <div className='w30'>a</div>
+        <div className='w30'>
+          <SectionPressure weather={weather} name={name} />
+        </div>
       </div>
     </>
   )
