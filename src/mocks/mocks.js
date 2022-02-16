@@ -87,11 +87,11 @@ export const mockRover = [
     weather: {
       embed: "https://mars.nasa.gov/layout/embed/image/m20weather/",
       data: [
-        {sol: 315, date: "Jan. 7, 2022", airTemperature: {max: "-6 °C", min: "-77 °C"}, pressure: "621.2 Pa", sunrise: "05:11:13", sunset: "17:40:04"},
-        {sol: 314, date: "Jan. 6, 2022", airTemperature: {max: "-6 °C", min: "-81 °C"}, pressure: "626.0 Pa", sunrise: "05:11:05", sunset: "17:40:31"},
-        {sol: 313, date: "Jan. 5, 2022", airTemperature: {max: "-6 °C", min: "-78 °C"}, pressure: "624.5 Pa", sunrise: "05:10:57", sunset: "17:40:57"},
-        {sol: 312, date: "Jan. 4, 2022", airTemperature: {max: "-6 °C", min: "-82 °C"}, pressure: "625.9 Pa", sunrise: "05:10:49", sunset: "17:41:24"},
-        {sol: 311, date: "Jan. 3, 2022", airTemperature: {max: "-10 °C", min: "-82 °C"}, pressure: "625.1 Pa", sunrise: "05:10:42", sunset: "17:41:51"},
+        {sol: 315, date: "Jan. 7, 2022", airTemperature: {max: "-6", min: "-77"}, pressure: "621.2", sunrise: "05:11:13", sunset: "17:40:04"},
+        {sol: 314, date: "Jan. 6, 2022", airTemperature: {max: "-6", min: "-81"}, pressure: "626.0", sunrise: "05:11:00", sunset: "17:40"},
+        {sol: 313, date: "Jan. 5, 2022", airTemperature: {max: "-6", min: "-78"}, pressure: "624.0", sunrise: "05:10:50", sunset: "17:40"},
+        {sol: 312, date: "Jan. 4, 2022", airTemperature: {max: "-6", min: "-82"}, pressure: "625.0", sunrise: "05:10:40", sunset: "17:41"},
+        {sol: 311, date: "Jan. 3, 2022", airTemperature: {max: "-10", min: "-82"}, pressure: "625.0", sunrise: "05:10:40", sunset: "17:41"},
       ]
     }
   },
@@ -270,13 +270,13 @@ export const mockRover = [
     weather: {
       embed: "https://mars.nasa.gov/layout/embed/image/mslweather/",
       data: [
-        {sol: 3375, date: "Feb. 2, 2022", airTemperature: {max: "0 °C", min: "-72 °C"}, pressure: "713 Pa", sunrise: "05:23:00", sunset: "17:20:04"},
-        {sol: 3374, date: "Feb. 1, 2022", airTemperature: {max: "0 °C", min: "-71 °C"}, pressure: "710 Pa", sunrise: "05:24:00", sunset: "17:20:31"},
-        {sol: 3373, date: "Jan. 31, 2022", airTemperature: {max: "-2 °C", min: "-71 °C"}, pressure: "710 Pa", sunrise: "05:24:00", sunset: "17:20:57"},
-        {sol: 3372, date: "Jan. 30, 2022", airTemperature: {max: "-2 °C", min: "-72 °C"}, pressure: "710 Pa", sunrise: "05:24:00", sunset: "17:20:24"},
-        {sol: 3371, date: "Jan. 29, 2022", airTemperature: {max: "-8 °C", min: "-72 °C"}, pressure: "711 Pa", sunrise: "05:24:00", sunset: "17:20:51"},
-        {sol: 3370, date: "Jan. 28, 2022", airTemperature: {max: "-5 °C", min: "-71 °C"}, pressure: "710 Pa", sunrise: "05:24:00", sunset: "17:20:24"},
-        {sol: 3369, date: "Jan. 27, 2022", airTemperature: {max: "-6 °C", min: "-72 °C"}, pressure: "710 Pa", sunrise: "05:25:00", sunset: "17:20:51"},
+        {sol: 3375, date: "Feb. 2, 2022", airTemperature: {max: "0", min: "-72"}, pressure: "713", sunrise: "05:23:00", sunset: "17:20:04"},
+        {sol: 3374, date: "Feb. 1, 2022", airTemperature: {max: "0", min: "-71"}, pressure: "710", sunrise: "05:24:00", sunset: "17:20:31"},
+        {sol: 3373, date: "Jan. 31, 2022", airTemperature: {max: "-2", min: "-71"}, pressure: "710", sunrise: "05:24:00", sunset: "17:20:57"},
+        {sol: 3372, date: "Jan. 30, 2022", airTemperature: {max: "-2", min: "-72"}, pressure: "710", sunrise: "05:24:00", sunset: "17:20:24"},
+        {sol: 3371, date: "Jan. 29, 2022", airTemperature: {max: "-8", min: "-72"}, pressure: "711", sunrise: "05:24:00", sunset: "17:20:51"},
+        {sol: 3370, date: "Jan. 28, 2022", airTemperature: {max: "-5", min: "-71"}, pressure: "710", sunrise: "05:24:00", sunset: "17:20:24"},
+        {sol: 3369, date: "Jan. 27, 2022", airTemperature: {max: "-6", min: "-72"}, pressure: "710", sunrise: "05:25:00", sunset: "17:20:51"},
       ]
     }
   },
