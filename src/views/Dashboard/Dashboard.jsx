@@ -9,7 +9,8 @@ import {
   DraggableGallery,
   DraggableWeather,
   Loader,
-  DraggableTargets
+  DraggableTargets,
+  DraggableWeatherChart
 } from "../../components"
 import { SubHeader } from "../../components/Content"
 
@@ -41,13 +42,16 @@ export function Dashboard() {
         <CurrentLocation location={currentRover.location}/>
       </div>
       <div id="draggableArea">
+        <div className="w100">
+          <DraggableWeatherChart />
+        </div>
         <div className="w40">
           {videoList}
-          <DraggableGallery />
         </div>
         <div className="w60">
           <DraggableWeather />
           <DraggableTargets />
+          <DraggableGallery />
         </div>
       </div>
     </section>

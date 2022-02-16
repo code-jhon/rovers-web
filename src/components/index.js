@@ -6,6 +6,7 @@ import { Gallery } from "./Gallery"
 import { Loader } from "./Loader"
 import { Weather } from "./Content/Weather"
 import { Targets } from "./Content/Targets"
+import { WeatherChart } from "./Content/WeatherChart"
 import { DraggableComponent } from "./DraggableComponent"
 
 export const DraggableVideoFeed = (props) => <DraggableComponent Component={VideoFeed} data={props} />
@@ -13,6 +14,7 @@ export const DraggableGallery = (props) => <DraggableComponent Component={Galler
 export const DraggableLocation = (props) => <DraggableComponent Component={CurrentLocation} data={props} />
 export const DraggableWeather = (props) => <DraggableComponent Component={Weather} data={props} />
 export const DraggableTargets = (props) => <DraggableComponent Component={Targets} data={props} />
+export const DraggableWeatherChart = (props) => <DraggableComponent Component={WeatherChart} data={props} />
 
 export {
   Topbar,

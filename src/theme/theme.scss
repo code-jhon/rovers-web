@@ -24,10 +24,16 @@ $font-medium: 16px;
 $font-big: 20px;
 $font-title: 40px;
 
-.flex-center{
+.flex{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  &.center{
+    align-items: center;
+    justify-content: center;
+  }
+  &.space-between{
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
 a{
