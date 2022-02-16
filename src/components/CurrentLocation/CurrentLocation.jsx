@@ -7,7 +7,7 @@ export function CurrentLocation({location}) {
       <iframe title="current location" id="myFrame" src={location.current} scrolling='no' frameBorder='0' allowFullScreen></iframe>
     </div>
   ) : (
-    <div className="currentLocation flex-center">
+    <div className="currentLocation flex center">
       <img width={`100%`} src={location.path} alt="path of mission" />
     </div>
   )
