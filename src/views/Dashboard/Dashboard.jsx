@@ -9,6 +9,7 @@ import {
   DraggableGallery,
   DraggableWeather,
   Loader,
+  DraggableTargets
 } from "../../components"
 import { SubHeader } from "../../components/Content"
 
@@ -41,13 +42,12 @@ export function Dashboard() {
       </div>
       <div id="draggableArea">
         <div className="w40">
-          <DraggableGallery />
           {videoList}
+          <DraggableGallery />
         </div>
         <div className="w60">
           <DraggableWeather />
-        </div>
-        <div className='w30'>
+          <DraggableTargets />
         </div>
       </div>
     </section>
