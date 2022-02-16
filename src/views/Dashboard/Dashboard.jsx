@@ -14,10 +14,8 @@ import {
 import { SubHeader } from "../../components/Content"
 
 import "./styles.scss"
-import { mockRover } from '../../mocks/mocks'
 
 export function Dashboard() {
-  console.log(JSON.stringify(mockRover))
   const { rovers, fetched, currentRover } = useContext(RoversContext)
 
   const welcome = (
