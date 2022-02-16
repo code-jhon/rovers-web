@@ -12,7 +12,7 @@ export const WeatherChart = () => {
     <>
       <div>Weather info from {name}</div>
       <div className='flex space-between'>
-        <div className='w30'>
+        <div className='w30 padding size-20'>
           <SectionDate weather={weather} />
         </div>
         <div className='w30'>

@@ -36,6 +36,16 @@ $font-title: 40px;
   }
 }
 
+.padding{
+  &.size-20{
+    padding: 20px;
+  }
+
+  &.size-30{
+    padding: 30px;
+  }
+}
+
 a{
   color: $dsb-a;
 
