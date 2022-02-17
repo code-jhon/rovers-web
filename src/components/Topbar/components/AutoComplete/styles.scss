@@ -18,4 +18,9 @@
     background-color: $item-background;
     cursor: pointer;
   }
+
+  div.name{
+    color: $cp-title;
+    font-size: $font-medium;
+  }
 }

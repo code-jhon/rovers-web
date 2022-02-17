@@ -9,12 +9,11 @@ import "./styles.scss";
 
 
 export function Sidebar({data}) {
-  console.log(data, "data")
-
   const audio = data?.gallery?.audio
 
   const content = data?.name && (
     <section className="content">
+      <div className='more-info'>More info</div>
       <RoverCard {...data} />
       <div>
         <AudioPlayer audio={audio} />
@@ -22,9 +21,6 @@ export function Sidebar({data}) {
       <div>
         <Specifications {...data.specifications} />
       </div>
-      <footer>
-        Credits
-      </footer>
     </section>
   )
 
