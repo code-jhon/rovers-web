@@ -11,7 +11,7 @@ export function AutoComplete({rovers = [], search = "", setVisible}) {
   const filteredRovers = search === "" ? rovers : filterRovers(rovers, search)
 
   const RoversList = () => filteredRovers.length > 0 ? filteredRovers.map(rover => (
-    <div key={rover.id}>
+    <div key={rover.id} data-testid={`rover-item-${rover.id}`}>
       <RoverItem {...rover} handleClick={setCurrentRover} />
     </div>
   ))
@@ -20,7 +20,7 @@ export function AutoComplete({rovers = [], search = "", setVisible}) {
   )
 
   return (
-    <div className='autoComplete' onClick={e => setVisible(false)}>
+    <div className='autoComplete' onClick={e => setVisible(false)} data-testid="AutoComplete-container">
       <RoversList />
     </div>
   )
