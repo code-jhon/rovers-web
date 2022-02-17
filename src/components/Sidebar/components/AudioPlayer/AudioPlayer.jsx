@@ -5,7 +5,7 @@ import "./styles.scss"
 
 export function AudioPlayer({audio}) {
   return audio.length > 0 && (
-    <div className='audioplayer'>
+    <div className='audioplayer' data-testid="AudioPlayer-container">
       <ReactPlayer 
         className='react-player'
         loop
