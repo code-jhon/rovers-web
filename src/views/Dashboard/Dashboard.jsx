@@ -4,6 +4,7 @@ import { RoversContext } from '../../providers/RoversProvider'
 import { 
   Topbar, 
   Sidebar,
+  VideoFeed,
   CurrentLocation,
   DraggableVideoFeed,
   DraggableGallery,
@@ -22,7 +23,12 @@ export function Dashboard() {
   const welcome = (
     <section className="rovers-content">
       <div className='rovers-component w100'>
-        <img style={{width: "100%"}} src='https://mars.nasa.gov/internal_resources/647' alt="welcome" />
+        <VideoFeed 
+          url={`https://www.youtube.com/watch?v=ZEyAs3NWH4A`} 
+          alt={`Mars in 4k`}
+          height={`80vh`}
+          autoplay={true}
+        />
       </div>
     </section>
   )
